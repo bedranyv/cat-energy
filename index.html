@@ -52,7 +52,7 @@
 		  </symbol>
 		  <symbol viewBox="-3 -3 23 23" id="icon-insta">
 		  	<g>
-		  		<path fill="#231F20" d="M14.002-1.501C16.482-1.501 18.5.519 18.5 3v11c0 2.481-2.018 4.5-4.498 4.5H3.01A4.504 4.504 0 0 1-1.488 14V3C-1.488.519.53-1.5 3.01-1.5h10.992m0-1.5H3.01C-.29-3-2.987-.301-2.987 3v11.001C-2.987 17.299-.29 20 3.01 20h10.995C17.301 20 20 17.299 20 13.999V3c0-3.301-2.699-6-5.998-6z"/><path fill="#231F20" d="M8.506 4.078a4.434 4.434 0 0 1 4.429 4.428c0 2.44-1.989 4.43-4.429 4.43a4.434 4.434 0 0 1-4.428-4.43 4.431 4.431 0 0 1 4.428-4.428m0-1.5a5.929 5.929 0 0 0 0 11.855c3.274 0 5.926-2.653 5.926-5.927S11.78 2.578 8.506 2.578z"/><circle fill="#231F20" cx="14.646" cy="2.379" r="1.341"/>
+		  		<path d="M14.002-1.501C16.482-1.501 18.5.519 18.5 3v11c0 2.481-2.018 4.5-4.498 4.5H3.01A4.504 4.504 0 0 1-1.488 14V3C-1.488.519.53-1.5 3.01-1.5h10.992m0-1.5H3.01C-.29-3-2.987-.301-2.987 3v11.001C-2.987 17.299-.29 20 3.01 20h10.995C17.301 20 20 17.299 20 13.999V3c0-3.301-2.699-6-5.998-6z"/><path d="M8.506 4.078a4.434 4.434 0 0 1 4.429 4.428c0 2.44-1.989 4.43-4.429 4.43a4.434 4.434 0 0 1-4.428-4.43 4.431 4.431 0 0 1 4.428-4.428m0-1.5a5.929 5.929 0 0 0 0 11.855c3.274 0 5.926-2.653 5.926-5.927S11.78 2.578 8.506 2.578z"/><circle cx="14.646" cy="2.379" r="1.341"/>
 		  	</g>
 		  </symbol>
 		  <symbol viewBox="0 0 10 19" id="icon-fb-mobile">
@@ -100,19 +100,19 @@
 					</svg>
 				</a>
 				<button class="page-header__toggle page-header__toggle--open" type="button"><span class="visually-hidden">Меню</span></button>
-			</div>
-			<div class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
-				<ul class="main-nav__list">
-					<li class="main-nav__item main-nav__item--current">
-						<a><span>Главная</span></a>
-					</li>
-					<li class="main-nav__item">
-						<a href="catalog.html"><span>Каталог продукции</span></a>
-					</li>
-					<li class="main-nav__item">
-						<a href="form.html"><span>Подбор программы</span></a>
-					</li>
-				</ul>
+				<div class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
+					<ul class="main-nav__list">
+						<li class="main-nav__item main-nav__item--current">
+							<a><span>Главная</span></a>
+						</li>
+						<li class="main-nav__item">
+							<a href="catalog.html"><span>Каталог продукции</span></a>
+						</li>
+						<li class="main-nav__item">
+							<a href="form.html"><span>Подбор программы</span></a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</header>
 		<main class="page-main">
@@ -155,10 +155,10 @@
 				<div class="advantages__container">
 					<h2 class="advantages__title">Как это работает</h2>
 					<ul class="advantages__list">
-						<li class="advantages__item advantages__item--1">Функциональное питание содержит только полезные питательные вещества.</li>
-						<li class="advantages__item advantages__item--2">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-						<li class="advantages__item advantages__item--3">Замените один-два приема обычной еды на наше функциональное питание.</li>
-						<li class="advantages__item advantages__item--4">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+						<li class="advantages__item advantages__item--1"><span>1</span>Функциональное питание <br>содержит только полезные <br>питательные вещества.</li>
+						<li class="advantages__item advantages__item--2"><span>2</span>Выпускается в виде порошка, <br>который нужно лишь залить <br>кипятком и готово.</li>
+						<li class="advantages__item advantages__item--3"><span>3</span>Замените один-два приема <br>обычной еды на наше <br>функциональное питание.</li>
+						<li class="advantages__item advantages__item--4"><span>4</span>Уже через месяц наслаждайтесь <br>изменениями к лучшему <br>вашего питомца!</li>
 					</ul>
 				</div>
 			</section>
@@ -166,34 +166,40 @@
 				<div class="example__container">
 					<h2 class="example__title">Живой пример</h2>
 					<p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-					<ul class="example__list">
-						<li class="example__item">
-							<p class="example__value">5 кг</p>
-							<p class="example__index">Снижение веса</p>
-						</li>
-						<li class="example__item">
-							<p class="example__value">60 дней</p>
-							<p class="example__index">Затрачено времени</p>
-						</li>
-					</ul>
-					<p class="example__expenses">Затраты на питание: 15 000 руб.</p>
+					<div class="example__list-container">
+						<ul class="example__list">
+							<li class="example__item">
+								<p class="example__value">5 кг</p>
+								<p class="example__index">Снижение веса</p>
+							</li>
+							<li class="example__item">
+								<p class="example__value">60 дней</p>
+								<p class="example__index">Затрачено времени</p>
+							</li>
+						</ul>
+						<p class="example__expenses">Затраты на питание: 15 000 руб.</p>
+					</div>
 					<div class="example__img-container">
-						<picture>
-							<source type="image/webp" media="(min-width: 1220px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-		          <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-		          <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-		          <source media="(min-width: 1220px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-		          <source media="(min-width: 768px)" srcset="img/before-tablet@1x.jpg 1x, img/before-tablet@2x.jpg 2x">
-		          <img class="example__image--before example__image--on" width="320" height="240" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот до диеты">
-						</picture>
-						<picture>
-							<source type="image/webp" media="(min-width: 1220px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-		          <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-		          <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
-		          <source media="(min-width: 1220px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-		          <source media="(min-width: 768px)" srcset="img/after-tablet@1x.jpg 1x, img/after-tablet@2x.jpg 2x">
-		          <img class="example__image--after" width="320" height="240" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Кот до диеты">
-						</picture>
+						<div class="example__img-container--before">
+							<picture>
+								<source type="image/webp" media="(min-width: 1220px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+			          <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+			          <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+			          <source media="(min-width: 1220px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+			          <source media="(min-width: 768px)" srcset="img/before-tablet@1x.jpg 1x, img/before-tablet@2x.jpg 2x">
+			          <img class="example__image example__image--before example__image--on" width="320" height="240" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот до диеты">
+							</picture>
+						</div>
+						<div class="example__img-container--after">
+							<picture>
+								<source type="image/webp" media="(min-width: 1220px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+			          <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+			          <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+			          <source media="(min-width: 1220px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+			          <source media="(min-width: 768px)" srcset="img/after-tablet@1x.jpg 1x, img/after-tablet@2x.jpg 2x">
+			          <img class="example__image example__image--after" width="320" height="240" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Кот до диеты">
+							</picture>
+						</div>
 					</div>
 					<div class="example__slider">
 						<p class="example__slider--text example__slider--text-before">Было</p>
@@ -202,14 +208,12 @@
 							<button class="toggle-mobile__button toggle-mobile__button--before toggle-mobile__button--on" type="button"></button>
 							<button class="toggle-mobile__button toggle-mobile__button--after" type="button"></button>
 						</div>
-
-						<!-- <div class="slider__line">
-               <span class="slider__toggle" tabindex="0"></span>
-            </div> -->
-
-						<!-- <input class="example__slider--range" type="range" min="0" max="100" step="1" value="50"> -->
+						<div class="example__slider--scale">
+							<div class="example__slider--grip">
+							</div>
+						</div>
 						<p class="example__slider--text example__slider--text-after">Стало</p>
-					</div>
+					</div> 
 				</div>
 			</section>
 		</main>
@@ -217,8 +221,10 @@
 		<footer class="page-footer page-footer--main-page">
 			<div class="page-footer__contacts contacts">
 				<h2 class="visually-hidden">Наш адрес</h2>
-				<p class="contacts__title">Приглашаем <br>к сотрудничеству дилеров!</p>
-				<p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+				<div class="contacts__title-address--wrapper">
+					<p class="contacts__title">Приглашаем <br>к сотрудничеству дилеров!</p>
+					<p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br><br>Санкт-Петербург</p>
+				</div>
 				<div class="contacts__map">
 					<!-- <picture>
 						<source type="image/webp" media="(min-width: 1220px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
@@ -239,64 +245,68 @@
 					</div>
 				</div>
 			</div>
-			<div class="page-footer__down-wrapper">
-				<div class="page-footer__logo">
-					<a href="index.html">
-						<svg width="128" height="24">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
-						</svg>
-					</a>
-				</div>
-				<div class="page-footer__socials socials">
-					<ul class="socials__list">
-						<li class="socials__item">
-							<a class="socials__link" href="https://vk.com">
-								<span class="visually-hidden">Мы Вконтакте</span>
-								<svg class="socials__img--mobile" width="22" height="12">
-									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vk-mobile"></use>
-								</svg>
-								<svg class="socials__img" width="30" height="16">
-									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vk"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="socials__item">
-							<a class="socials__link" href="https://instagram.com">
-								<span class="visually-hidden">Мы в Инстаграме</span>
-								<svg class="socials__img--mobile" width="16" height="16">
-									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta-mobile"></use>
-								</svg>
-								<svg class="socials__img" width="23" height="23">
-									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="socials__item">
-							<a class="socials__link" href="https://facebook.com">
-								<span class="visually-hidden">Мы в Фейсбуке</span>
-								<svg class="socials__img--mobile" width="10" height="19">
-									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb-mobile"></use>
-								</svg>
-								<svg class="socials__img" width="14" height="28">
-									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="page-footer__copyright">
-					<a class="page-footer__copyright--text" href="https://htmlacademy.ru">HTML Academy</a>
-					<a class="page-footer__copyright-img" href="https://htmlacademy.ru">
-						<svg class="page-footer__copyright--img" width="27" height="34" viewbox="0 0 27 35">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#htmlacademy"></use>
-						</svg>
-					</a>
+			<div class="page-footer__down">
+				<div class="page-footer__down-wrapper">
+					<div class="page-footer__logo">
+						<a href="index.html">
+							<svg width="128" height="24">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="page-footer__socials socials">
+						<ul class="socials__list">
+							<li class="socials__item">
+								<a class="socials__link" href="https://vk.com">
+									<span class="visually-hidden">Мы Вконтакте</span>
+									<svg class="socials__img--mobile" width="22" height="12">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vk-mobile"></use>
+									</svg>
+									<svg class="socials__img" width="30" height="16">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vk"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="https://instagram.com">
+									<span class="visually-hidden">Мы в Инстаграме</span>
+									<svg class="socials__img--mobile" width="16" height="16">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta-mobile"></use>
+									</svg>
+									<svg class="socials__img" width="23" height="23">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="socials__item">
+								<a class="socials__link" href="https://facebook.com">
+									<span class="visually-hidden">Мы в Фейсбуке</span>
+									<svg class="socials__img--mobile" width="10" height="19">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb-mobile"></use>
+									</svg>
+									<svg class="socials__img" width="14" height="28">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="page-footer__copyright">
+						<a class="page-footer__copyright--text" href="https://htmlacademy.ru">HTML Academy</a>
+						<a class="page-footer__copyright-img" href="https://htmlacademy.ru">
+							<svg class="page-footer__copyright--img" width="27" height="34" viewbox="0 0 27 35">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#htmlacademy"></use>
+							</svg>
+						</a>
+					</div>
 				</div>
 			</div>
 		</footer>
 
 		<script src="js/main-nav.js"></script>
 		<script src="js/example-toggle-mobile.js"></script>
+		<script src="js/example-slider.js"></script>
+
 
 	</body>
 </html>
