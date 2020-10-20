@@ -2002,8 +2002,18 @@ template {
     margin-bottom: 87px; } }
 
 .additional-products {
+  position: relative;
   margin: 0 auto;
   width: 100%; }
+  .additional-products::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 13px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent 50%, #68b738 50.1%, #68b738 100%); }
 
 .additional-products__container {
   margin: 0 auto;
@@ -2024,15 +2034,6 @@ template {
     font-weight: 400;
     color: #111111;
     background: #ffffff; }
-  .additional-products__title::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 13px;
-    right: -20%;
-    width: 100%;
-    height: 3px;
-    background: #68b738; }
 
 .additional-products__list {
   margin: 0;
