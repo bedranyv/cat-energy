@@ -2124,6 +2124,9 @@ template {
   text-align: center; }
 
 @media (min-width: 768px) {
+  .additional-products::after {
+    top: 20px;
+    background: #68b738; }
   .additional-products__container {
     margin-bottom: 76px;
     padding: 0 4%;
@@ -2135,10 +2138,6 @@ template {
       padding: 0 37px;
       font-size: 36px;
       line-height: 36px; }
-    .additional-products__title::after {
-      top: 21px;
-      left: -100%;
-      width: 200vw; }
   .additional-products__list {
     margin-bottom: 71px; }
   .additional-products__item {
