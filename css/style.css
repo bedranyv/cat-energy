@@ -310,6 +310,12 @@ template {
   font-style: normal;
   src: url("../fonts/oswald-regular.woff2") format("woff2"), url("../fonts/oswald-regular.woff") format("woff"); }
 
+@font-face {
+  font-weight: normal;
+  font-family: "Oswald Medium";
+  font-style: normal;
+  src: url("../fonts/oswald-medium.woff2") format("woff2"), url("../fonts/oswald-medium.woff") format("woff"); }
+
 @-webkit-keyframes fadeInLeft {
   0% {
     opacity: 0;
@@ -529,7 +535,7 @@ template {
     padding: 20px 0;
     height: 100%;
     min-height: 65px;
-    font-family: "Oswald Medium",  sans-serif;
+    font-family: "Oswald Medium", Arial, sans-serif;
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
