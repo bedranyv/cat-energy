@@ -434,6 +434,12 @@ template {
   .page-header__logo--mobile:active {
     opacity: 0.6; }
 
+.page-index .page-header__logo--mobile:hover, .page-index .page-header__logo--mobile:focus {
+  opacity: 1; }
+
+.page-index .page-header__logo--mobile:active {
+  opacity: 1; }
+
 .page-header__toggle {
   padding: 0;
   font: inherit;
@@ -497,6 +503,10 @@ template {
       opacity: 0.8; }
     .page-header__logo-svg--tablet:active {
       opacity: 0.6; }
+  .page-index .page-header__logo-svg--tablet:hover, .page-index .page-header__logo-svg--tablet:focus {
+    opacity: 1; }
+  .page-index .page-header__logo-svg--tablet:active {
+    opacity: 1; }
   .page-header__main-nav {
     margin-top: 32px;
     width: 442px; } }
@@ -512,6 +522,10 @@ template {
       opacity: 0.8; }
     .page-header__logo-svg--desktop:active {
       opacity: 0.6; }
+  .page-index .page-header__logo-svg--desktop:hover, .page-index .page-header__logo-svg--desktop:focus {
+    opacity: 1; }
+  .page-index .page-header__logo-svg--desktop:active {
+    opacity: 1; }
   .page-header__logo-container {
     margin-top: 54px;
     width: 202px;
