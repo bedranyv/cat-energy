@@ -429,6 +429,10 @@ template {
   left: calc(50% - 50px);
   width: 101px;
   height: 18px; }
+  .page-header__logo--mobile:hover, .page-header__logo--mobile:focus {
+    opacity: 0.8; }
+  .page-header__logo--mobile:active {
+    opacity: 0.6; }
 
 .page-header__toggle {
   padding: 0;
@@ -489,6 +493,10 @@ template {
     display: none; }
   .page-header__logo-svg--tablet {
     display: block; }
+    .page-header__logo-svg--tablet:hover, .page-header__logo-svg--tablet:focus {
+      opacity: 0.8; }
+    .page-header__logo-svg--tablet:active {
+      opacity: 0.6; }
   .page-header__main-nav {
     margin-top: 32px;
     width: 442px; } }
@@ -500,6 +508,10 @@ template {
     display: none; }
   .page-header__logo-svg--desktop {
     display: block; }
+    .page-header__logo-svg--desktop:hover, .page-header__logo-svg--desktop:focus {
+      opacity: 0.8; }
+    .page-header__logo-svg--desktop:active {
+      opacity: 0.6; }
   .page-header__logo-container {
     margin-top: 54px;
     width: 202px;
@@ -1760,14 +1772,18 @@ template {
       width: 35px;
       height: 35px;
       border: 2px solid #68b738;
-      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3); }
+      box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); }
   .slider__controls-text {
     z-index: 2;
     padding-bottom: 6px;
     width: 49px;
     font-size: 20px;
-    border-bottom: 1px dotted #000000;
-    cursor: pointer; } }
+    border-bottom: 1px dotted #bebebe;
+    cursor: pointer; }
+    .slider__controls-text:hover, .slider__controls-text:focus {
+      border-bottom: 1px solid #989898; }
+    .slider__controls-text:active {
+      border-bottom: none; } }
 
 @media (min-width: 1300px) {
   .slider__image-wrapper {
@@ -2293,26 +2309,27 @@ template {
   box-sizing: border-box;
   flex-grow: 1;
   padding: 0 13px;
+  padding-top: 3px;
   height: 43px;
   border: 1px solid #e6e6e6; }
   .program-form__input::-moz-placeholder {
     font-size: 16px;
-    line-height: 18px;
+    line-height: 16px;
     color: #444444;
     text-transform: uppercase; }
   .program-form__input:-ms-input-placeholder {
     font-size: 16px;
-    line-height: 18px;
+    line-height: 16px;
     color: #444444;
     text-transform: uppercase; }
   .program-form__input::-ms-input-placeholder {
     font-size: 16px;
-    line-height: 18px;
+    line-height: 16px;
     color: #444444;
     text-transform: uppercase; }
   .program-form__input::placeholder {
     font-size: 16px;
-    line-height: 18px;
+    line-height: 16px;
     color: #444444;
     text-transform: uppercase; }
   .program-form__input:hover {
@@ -2323,6 +2340,12 @@ template {
     border: 2px solid #444444; }
   .program-form__input:focus:invalid, .program-form__input:active:invalid {
     border-color: #ff8282; }
+  .program-form__input:active + svg,
+  .program-form__input:focus + svg {
+    fill: #68b738; }
+  .program-form__input:focus:invalid + svg,
+  .program-form__input:active:invalid + svg {
+    fill: #ff8282; }
 
 .program-form__fieldset--program {
   margin: 0 -6.82%;
@@ -2412,34 +2435,26 @@ template {
     font-weight: 400;
     color: #111111; }
 
-.program-form__input-label-email--wrapper,
-.program-form__input-label-tel--wrapper {
-  position: relative; }
-  .program-form__input-label-email--wrapper::after,
-  .program-form__input-label-tel--wrapper::after {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: center; }
-  .program-form__input-label-email--wrapper .program-form__input,
-  .program-form__input-label-tel--wrapper .program-form__input {
-    box-sizing: border-box;
-    padding-right: 50px;
-    width: calc(100% - 100px); }
+.program-form__fieldset--master-data .program-form__input {
+  box-sizing: border-box;
+  padding-right: 50px;
+  width: calc(100% - 100px); }
 
-.program-form__input-label-email--wrapper::after {
-  top: 16px;
-  right: 17px;
-  width: 17px;
-  height: 13px;
-  background-image: url("../img/vector/icon-mail.svg"); }
+.program-form__fieldset--master-data p {
+  position: relative;
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  height: 43px; }
 
-.program-form__input-label-tel--wrapper::after {
-  top: 14px;
-  right: 14px;
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/vector/icon-phone.svg"); }
+.program-form__input-svg {
+  position: absolute; }
+  .program-form__input-svg--mail {
+    top: 16px;
+    right: 17px; }
+  .program-form__input-svg--phone {
+    top: 14px;
+    right: 14px; }
 
 .program-form__section--comments {
   margin-top: 15px; }
@@ -2570,6 +2585,7 @@ template {
     line-height: 20px; }
   .program-form__input {
     padding: 0 20px;
+    padding-top: 3px;
     height: 50px; }
     .program-form__input:active, .program-form__input:focus {
       padding: 0 19px; }
@@ -2628,15 +2644,17 @@ template {
       display: none; }
   .program-form__fieldset--master-data {
     margin-top: 73px; }
-  .program-form__input-label-email--wrapper .program-form__input,
-  .program-form__input-label-tel--wrapper .program-form__input {
-    padding-right: 50px; }
-  .program-form__input-label-email--wrapper::after {
+    .program-form__fieldset--master-data p {
+      margin-bottom: 22px;
+      height: 50px; }
+    .program-form__fieldset--master-data .program-form__input {
+      padding-right: 50px; }
+  .program-form__input-svg--mail {
     top: 19px;
-    right: 19px; }
-  .program-form__input-label-tel--wrapper::after {
+    right: 20px; }
+  .program-form__input-svg--phone {
     top: 16px;
-    right: 16px; }
+    right: 17px; }
   .program-form__section--comments {
     margin-top: 46px; }
   .program-form__fieldset--comments {
@@ -2737,13 +2755,8 @@ template {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between; }
-  .program-form__input-label-email--wrapper::after {
-    right: 21px; }
-  .program-form__input-label-tel--wrapper::after {
-    right: 19px; }
-  .program-form__input-label-email--wrapper,
-  .program-form__input-label-tel--wrapper {
-    width: 46.8%; }
+    .program-form__fieldset--master-data p {
+      width: 46.8%; }
   .program-form__section--comments {
     margin-top: 48px; }
   .program-form__section--additionally {
