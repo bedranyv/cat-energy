@@ -1848,6 +1848,7 @@ template {
     padding: 0 7.63%; } }
 
 .product {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -1860,7 +1861,11 @@ template {
 .product__image-wrapper {
   width: 49%;
   height: 144px;
-  text-align: center; }
+  text-align: center;
+  -webkit-animation-name: increase;
+          animation-name: increase;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s; }
 
 .product__specifications-wrapper {
   width: 51%;
