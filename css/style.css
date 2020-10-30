@@ -1984,9 +1984,7 @@ template {
     margin: 0 auto;
     width: 100%;
     max-width: 388px;
-    height: auto;
-    bottom: -100%;
-    transform: translateY(-100%); }
+    height: auto; }
   .product__specifications-wrapper {
     margin-bottom: 35px;
     padding: 0;
