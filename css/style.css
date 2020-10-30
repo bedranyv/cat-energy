@@ -1981,10 +1981,9 @@ template {
   .product__image {
     display: block;
     position: absolute;
-    margin: 0 auto;
+    left: calc(50% - (324px / 2));
     bottom: 0;
-    width: 100%;
-    max-width: 388px;
+    width: 324px;
     height: 208px; }
     .product__image--small {
       height: 174px; }
@@ -2045,6 +2044,12 @@ template {
       margin-left: 0; }
     .product:nth-child(4n) {
       margin-right: 0; }
+  .product__image {
+    left: calc(50% - (245px / 2));
+    width: 245px;
+    height: 208px; }
+    .product__image--small {
+      height: 172px; }
   .product__specifications-wrapper {
     margin-bottom: 31px; }
   .product__details td {
