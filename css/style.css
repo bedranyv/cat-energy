@@ -2336,6 +2336,10 @@ template {
   padding: 0 13px;
   padding-top: 3px;
   height: 43px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
+  text-transform: uppercase;
   border: 1px solid #e6e6e6; }
   .program-form__input::-moz-placeholder {
     font-size: 16px;
@@ -2361,7 +2365,7 @@ template {
     border-color: #cdcdcd; }
   .program-form__input:active, .program-form__input:focus {
     outline: none;
-    padding: 0 12px;
+    padding-left: 12px;
     border: 2px solid #444444; }
   .program-form__input:focus:invalid, .program-form__input:active:invalid {
     border-color: #ff8282; }
@@ -2491,6 +2495,10 @@ template {
   padding: 13px 14px;
   width: 100%;
   height: 150px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
   border-color: #e6e6e6; }
   .program-form__textarea-comments::-moz-placeholder {
     font-size: 16px;
@@ -2609,23 +2617,25 @@ template {
     font-size: 20px;
     line-height: 20px; }
   .program-form__input {
+    margin: 0;
     padding: 0 20px;
-    padding-top: 3px;
-    height: 50px; }
+    height: 50px;
+    font-size: 20px;
+    line-height: 20px; }
     .program-form__input:active, .program-form__input:focus {
-      padding: 0 19px; }
-  .program-form__input::-moz-placeholder {
-    font-size: 20px;
-    line-height: 20px; }
-  .program-form__input:-ms-input-placeholder {
-    font-size: 20px;
-    line-height: 20px; }
-  .program-form__input::-ms-input-placeholder {
-    font-size: 20px;
-    line-height: 20px; }
-  .program-form__input::placeholder {
-    font-size: 20px;
-    line-height: 20px; }
+      padding-left: 19px; }
+    .program-form__input::-moz-placeholder {
+      font-size: 20px;
+      line-height: 20px; }
+    .program-form__input:-ms-input-placeholder {
+      font-size: 20px;
+      line-height: 20px; }
+    .program-form__input::-ms-input-placeholder {
+      font-size: 20px;
+      line-height: 20px; }
+    .program-form__input::placeholder {
+      font-size: 20px;
+      line-height: 20px; }
   .program-form__section--cat-data {
     margin-top: 65px; }
   .program-form__fieldset--program {
@@ -2687,7 +2697,9 @@ template {
   .program-form__textarea-comments {
     margin: 0;
     padding: 10px 17px;
-    height: 172px; }
+    height: 172px;
+    font-size: 20px;
+    line-height: 30px; }
     .program-form__textarea-comments::-moz-placeholder {
       font-size: 20px;
       line-height: 30px; }
