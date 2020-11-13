@@ -17,7 +17,7 @@ gulp.task('sass', function () { // task-name (sass) ссылается на им
     .pipe(plumber()) // запуск плагина, который не останавливает компиляцию в случае возникновения ошибки
     .pipe(sass().on('error', sass.logError)) // запуск плагина комплиляции SCSS в CSS (.on(‘error’, sass.logError) означает что, если есть ошибки, то вывести их в консоль.)
     .pipe(postcss([autoprefixer()])) // запуск плагина для расстановки прификсов
-    .pipe(gulp.dest('./build/css')) // путь к папке, куда помещаем конечные файлы
+    .pipe(gulp.dest('./docs/css')) // путь к папке, куда помещаем конечные файлы
     .pipe(browserSync.stream()); // запуск плагина, который перерисовывает страницу (stream) в браузере в случае изменений в коде
 });
  
@@ -25,39 +25,39 @@ gulp.task('sass', function () { // task-name (sass) ссылается на им
 gulp.task('watch', function () {
 	
 	browserSync.init({
-		server: './build/' //  запускаем сервер, указываем где находится корень сайта (где находится index.html)
+		server: './docs/' //  запускаем сервер, указываем где находится корень сайта (где находится index.html)
 	});
 
   gulp.watch('./source/**/*.scss', gulp.series('sass')); // запуск watch, который отслеживает изменения в *.scss и в случае изменений запускает задачу sass, которая компилирует css. Чтобы остановить watch используйте сочетание клавиш Ctrl + C.
-  gulp.watch('./build/*.html').on('change', browserSync.reload); // запуск watch, который отслеживает изменения в *.html файлах и в случае изменений перезагружкает страницу (reload)
+  gulp.watch('./docs/*.html').on('change', browserSync.reload); // запуск watch, который отслеживает изменения в *.html файлах и в случае изменений перезагружкает страницу (reload)
 });
 
 
 // задача для запуска минификации css файла
 gulp.task('cssmin', function () {
-	return gulp.src('./build/css/*.css')
+	return gulp.src('./docs/css/*.css')
 	.pipe(cssmin())
 	.pipe(rename('style.min.css'))
-	.pipe(gulp.dest('./build/css'))
+	.pipe(gulp.dest('./docs/css'))
 });
 
 // задача для запуска минификации изображений
 gulp.task('imagemin', function () {
-	return gulp.src('./build/img/**/*.{png,jpg,svg}')
+	return gulp.src('./docs/img/**/*.{png,jpg,svg}')
 	.pipe(imagemin([
 		imagemin.optipng({optimizationLevel: 3}),
 		imagemin.mozjpeg({progressive: true}),
 		imagemin.svgo()
 	]))
 
-	.pipe(gulp.dest('./build/img'))
+	.pipe(gulp.dest('./docs/img'))
 });
 
 // задача для запуска создания webp изображений
 gulp.task('webp', function () {
-	return gulp.src('./build/img/**/*.{png,jpg}')
+	return gulp.src('./docs/img/**/*.{png,jpg}')
 	.pipe(webp({quality: 90}))
-	.pipe(gulp.dest('./build/img'))
+	.pipe(gulp.dest('./docs/img'))
 });
 
 // задача для запуска создания webp изображений в папке img-to-webp
