@@ -19,4 +19,4 @@ toggleMenu.addEventListener("click", function() {
 		toggleMenu.classList.remove("page-header__toggle--close");
 		toggleMenu.classList.add("page-header__toggle--open");
 	}
-})
+});

@@ -8,11 +8,11 @@ buttonBefore.addEventListener("click", function() {
 	imageBefore.classList.add("slider__image--on");
 	buttonAfter.classList.remove("toggle-mobile__button--on");
 	imageAfter.classList.remove("slider__image--on");
-})
+});
 
 buttonAfter.addEventListener("click", function() {
 	buttonAfter.classList.add("toggle-mobile__button--on");
 	imageAfter.classList.add("slider__image--on");
 	buttonBefore.classList.remove("toggle-mobile__button--on");
 	imageBefore.classList.remove("slider__image--on");
-})
+});
