@@ -1,0 +1,131 @@
+@import "general/normalize";
+@import "general/variables";
+@import "general/fonts";
+@import "general/animations";
+@import "blocks/global/button";
+@import "blocks/global/page-other";
+@import "blocks/global/page-header";
+@import "blocks/global/main-nav";
+@import "blocks/global/page-footer";
+@import "blocks/global/contacts";
+@import "blocks/global/socials";
+@import "blocks/index/promo";
+@import "blocks/index/programs";
+@import "blocks/index/advantages";
+@import "blocks/index/example";
+@import "blocks/index/toggle-mobile";
+@import "blocks/index/slider";
+@import "blocks/catalog/catalog";
+@import "blocks/catalog/product";
+@import "blocks/catalog/additional-products";
+@import "blocks/form/program-form";
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+
+	min-width: $mobile-width;
+	width: 100%;
+	// width: calc(100% + 10px); // ДЛЯ ВЕРТИКАЛЬНОЙ ПОЛОСЫ ПРОКРУТКИ
+
+	font-family: $oswald-regular;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	font-style: normal;
+	color: $text-color-1;
+
+	overflow-x: hidden;
+}
+
+.container {
+	position: relative;
+
+	margin: 0 auto;
+	padding: $mobile-padding;;
+	max-width: 767px;
+
+	@media (min-width: $tablet-width) {
+		padding: $tablet-padding;
+		max-width: 1199px;
+	}
+
+	@media (min-width: $desktop-width) {
+		padding: $desktop-padding;
+		max-width: 1600px;
+	}
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+%text-title {
+	font-family: $oswald-regular;
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 400;
+	color: $text-color-2;
+
+	@media (min-width: $tablet-width) {
+		font-size: 60px;
+		line-height: 60px;
+	}
+}
+
+%text-plain {
+	font-family: $arial;
+	font-size: 14px;
+	line-height: 18px;
+	color: $text-color-1;
+
+	@media (min-width: $tablet-width) {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+%hide-button {
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+}
+
+%green-line {
+	&::after {
+		content: "";
+
+		position: absolute;
+
+		z-index: -1;
+
+		top: 13px;
+		left: 0;
+
+		width: 100%;
+		height: 3px;
+
+		background: linear-gradient(to right, transparent 10%, $green 10.1%, $green 100%);
+	
+		@media (min-width: $tablet-width) {
+			top: 20px;
+
+			background: $green;
+		}
+	}
+}
+
+

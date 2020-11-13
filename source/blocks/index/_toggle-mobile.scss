@@ -1,0 +1,52 @@
+.toggle-mobile__line {
+	position: absolute;
+	box-sizing: border-box;
+
+	top: 4px;
+
+	width: 84%;
+	height: 12px;
+
+	margin: 0 8%;
+
+	background-color: #ffffff;
+	border: 1px solid #cdcdcd;
+	border-radius: 5px;
+
+	vertical-align: middle;
+}
+
+.toggle-mobile__button {
+	position: absolute;
+	box-sizing: border-box;
+
+	top: 7px;
+
+	width: calc(50% - 15%);
+	height: 6px;
+
+	margin: 0 13%;
+
+	background-color: unset;
+	background-color: $green;
+
+	border: none;
+	border-radius: 5px;
+
+	cursor: pointer;
+
+	opacity: 0;
+
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+}
+
+.toggle-mobile__button--after {
+	right: 0;
+}
+
+.toggle-mobile__button--on {
+	opacity: 1;
+}

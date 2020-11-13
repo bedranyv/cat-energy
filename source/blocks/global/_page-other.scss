@@ -1,0 +1,20 @@
+.page-other__title {
+	margin: 0;
+	margin-top: 29px;
+	padding: 0;
+
+	@extend %text-title; 
+}
+
+@media (min-width: $tablet-width) { 
+	.page-other__title {
+		margin-top: 60px;
+		padding: 0;
+	}
+}
+
+@media (min-width: $desktop-width) { 
+	.page-other__title {
+		margin-top: 78px;
+	}
+}

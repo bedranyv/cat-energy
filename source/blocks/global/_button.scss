@@ -1,0 +1,45 @@
+.button {
+	display: inline-block;
+	box-sizing: border-box;
+
+	padding-top: 12px;
+
+	height: 40px;
+
+	font-size: 14px;
+	line-height: 18px;
+	color: $text-color-4;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+
+	background-color: $button-color;
+
+	cursor: pointer;
+
+	transition: all 0.2s linear;
+
+	&:hover,
+	&:focus {
+		background-color: $button-color-hover;
+
+		transition: all 0.2s linear;
+	}
+
+	&:active {
+		color: rgba($text-color-4, 0.3);
+
+		transition: all 0.2s linear;
+	}
+}
+
+@media (min-width: $tablet-width) { 
+	.button {
+		padding-top: 15px;
+
+		height: 52px;
+		
+		font-size: 20px;
+		line-height: 20px;
+	}
+}

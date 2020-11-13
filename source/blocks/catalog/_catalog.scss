@@ -1,0 +1,42 @@
+.catalog {
+	margin: 0 auto;
+	margin-top: 39px;
+
+	width: 100%;
+
+	& .container {
+		padding: 0;
+	}
+}
+
+.catalog__list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+	.catalog {
+		margin-top: 22px;
+
+		& .container {
+			padding: $tablet-padding;
+		}
+	}
+
+	.catalog__list {
+		display: flex;
+		flex-wrap: wrap;
+
+		width: 100%;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.catalog {
+		& .container {
+			padding: $desktop-padding;
+		}
+	}
+}
