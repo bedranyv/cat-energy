@@ -1,0 +1,48 @@
+.sale {
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+	width: 100%;
+
+}
+
+.sale__title {
+	margin: 0;
+	margin-bottom: 33px;
+	padding: 0;
+	padding-top: 32px;
+
+	@extend %text-title;
+}
+
+.sale__text {
+	margin-bottom: 25px;
+	padding-right: 10px;
+	
+	@extend %text-plain;
+}
+
+
+@media (min-width: $tablet-width) {
+	.sale .container {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+	}
+
+	.sale__title {
+		margin-bottom: 61px;
+		padding-top: 35px;
+	}
+
+	.sale__text-wrapper {
+        margin: 0;
+        padding: 0;
+
+		width: 50%;
+    }
+    
+    .sale__timer {
+        width: 50%;
+    }
+}

@@ -6,7 +6,7 @@
 		<title>Cat-Energy | HTML Academy</title>
 		<link rel="preload" href="fonts/oswald-regular.woff2" as="font">
 		<link rel="preload" href="fonts/oswald-medium.woff2" as="font">
-		<link href="css/style.min.css" type="text/css" rel="stylesheet">
+		<link href="css/style.css" type="text/css" rel="stylesheet">
 	</head>
 	<body class="page-index">
 
@@ -209,6 +209,35 @@
 					</div>
 				</div>
 			</section>
+			<article class="sale">
+				<div class="container">
+					<div class="sale__text-wrapper">
+						<h2 class="sale__title">Распродажа!</h2>
+						<p class="sale__text">Только до конца года! При покупке двух и более едениц товара - скидка 20%! Порадуйте своего любимца вкусняшками на Новый Год. Количество товара ограничено!</p>
+					</div>
+					<div class="sale-timer">
+						<p class="sale-timer__title">До конца акции осталось:</p>
+						<div class="sale-timer__wrapper">
+							<div class="sale-timer__item">
+								<span class="sale-timer__item--value sale-timer__item--days"></span>
+								<span class="sale-timer__item--title">дней</span>
+							</div>
+							<div class="sale-timer__item">
+								<span class="sale-timer__item--value sale-timer__item--hours"></span>
+								<span class="sale-timer__item--title">часов</span>
+							</div>
+							<div class="sale-timer__item">
+								<span class="sale-timer__item--value sale-timer__item--minutes"></span>
+								<span class="sale-timer__item--title">минут</span>
+							</div>
+							<div class="sale-timer__item">
+								<span class="sale-timer__item--value sale-timer__item--seconds"></span>
+								<span class="sale-timer__item--title">секунд</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
 		</main>
 
 		<footer class="page-footer page-footer--main-page">
@@ -288,9 +317,44 @@
 			</div>
 		</footer>
 
+		<section class="modal__window modal--hide">
+			<h2 class="modal__title">Акция до конца дня специально для вас!</h2>
+			<p class="modal__text">Ваш котейка будет вам благодарен! <br>При заказе двух едениц корма - <span>третий</span> абсолютно <span>бесплатно!</span></p>
+			<p class="modal__text">
+				<a class="modal__link" href="catalog.html">Перейти в каталог</a>
+			</p>
+
+			<div class="modal__modal-timer modal-timer">
+				<p class="modal-timer__title">До конца акции осталось:</p>
+				<div class="modal-timer__wrapper">
+					<div class="modal-timer__item">
+						<!-- style="display:none;" -->
+						<span class="modal-timer__item--value modal-timer__item--days"></span>
+						<span class="modal-timer__item--title">дней</span>
+					</div>
+					<div class="modal-timer__item">
+						<span class="modal-timer__item--value modal-timer__item--hours"></span>
+						<span class="modal-timer__item--title">часов</span>
+					</div>
+					<div class="modal-timer__item">
+						<span class="modal-timer__item--value modal-timer__item--minutes"></span>
+						<span class="modal-timer__item--title">минут</span>
+					</div>
+					<div class="modal-timer__item">
+						<span class="modal-timer__item--value modal-timer__item--seconds"></span>
+						<span class="modal-timer__item--title">секунд</span>
+					</div>
+				</div>
+			</div>
+			<button class="modal__btn--close"><span>Закрыть</span></button>
+		</section>
+		<div class="modal__overlay modal--hide"></div>
+
 		<script src="js/main-nav.js"></script>
 		<script src="js/example-toggle-mobile.js"></script>
 		<script src="js/example-slider.js"></script>
+		<script src="js/timer.js"></script>
+		<script src="js/modal.js"></script>
 
 
 	</body>

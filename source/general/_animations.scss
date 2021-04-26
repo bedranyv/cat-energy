@@ -32,3 +32,43 @@
 		transform: scale(1);
 	}
 }
+
+//Анимация ссылки в модалке
+@keyframes modal_link_hover {
+    0% {transform: scaleX(0);} 
+    10% {transform: scaleX(15%);}
+    20% {transform: scaleX(30%);}
+    30% {transform: scaleX(45%);}
+    40% {transform: scaleX(55%);}
+    50% {transform: scaleX(65%);}
+    60% {transform: scaleX(75%);}
+    70% {transform: scaleX(85%);}
+    80% {transform: scaleX(90%);}
+    90% {transform: scaleX(95%);}
+    100% {transform: scaleX(100%);}
+}
+
+// анимация таймера в модалке
+@keyframes timer_tick {
+	0% {transform: translateX(0);} 
+	10% {transform: translateX(-5px);}
+	20% {transform: translateX(5px);}
+	30% {transform: translateX(-5px);}
+	40% {transform: translateX(4px);}
+	50% {transform: translateX(-4px);}
+	60% {transform: translateX(3px);}
+	70% {transform: translateX(-3px);}
+	80% {transform: translateX(2px);}
+	90% {transform: translateX(-1px);}
+	100% {transform: translateX(0);}
+}
+
+@keyframes modal__btn-close-animation_1 {
+	from {transform: rotate(45deg);}
+	to {transform: rotate(135deg);}
+}
+
+@keyframes modal__btn-close-animation_2 {
+	from {transform: rotate(-45deg);}
+	to {transform: rotate(45deg);}
+}
