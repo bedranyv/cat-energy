@@ -1,57 +1,54 @@
+.modal-timer__title {
+    font-family: $arial;
+    font-size: 20px;
+    color: $text-color-1;
+    font-weight: bold;
+}
 
-@media (min-width: $tablet-width) {
-    .modal-timer__title {
-        font-family: $arial;
-        font-size: 20px;
-        color: $text-color-1;
-        font-weight: bold;
-    }
+.modal-timer__wrapper {
+    display: flex;
+    justify-content: center;
+}
 
-    .modal-timer__wrapper {
-        display: flex;
-        justify-content: center;
-    }
+.modal-timer__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
-    .modal-timer__item {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+    box-sizing: border-box;
+    width: 63px;
+    height: 63px;
 
-        box-sizing: border-box;
-        width: 63px;
-        height: 63px;
+    border-radius: 50%;
 
-        border-radius: 50%;
+    margin: 0 10px;
+    padding: 5px;
 
-        margin: 0 10px;
-        padding: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 5px #ffffff;
+}
 
-        background-color: #ffffff;
-        box-shadow: 0 0 5px 5px #ffffff;
-    }
+.modal-timer__item--value {
+    display: block;
+    width: 100%;
 
-    .modal-timer__item--value {
-        display: block;
-        width: 100%;
+    font-family: $arial;
+    font-size: 36px;
+    color: $text-color-1;
+    font-weight: bold;
+}
 
-        font-family: $arial;
-        font-size: 36px;
-        color: $text-color-1;
-        font-weight: bold;
-    }
+.modal-timer__item--title {
+    display: block;
+    width: 100%;
 
-    .modal-timer__item--title {
-        display: block;
-        width: 100%;
+    font-family: $arial;
+    font-size: 12px;
+    line-height: 10px;
+    color: $text-color-1;
+}
 
-        font-family: $arial;
-        font-size: 12px;
-        line-height: 10px;
-        color: $text-color-1;
-    }
-
-    .animation_timer_tick {
-        animation-name: timer_tick;
-		animation-duration: 0.7s;
-    }
+.animation_timer_tick {
+    animation-name: timer_tick;
+    animation-duration: 0.7s;
 }
