@@ -28,9 +28,11 @@ function showModalByScroll() {
 
 
 // показ модалки с заданием таймера
-const timerShowModal = setTimeout(showModal, 15000);
+let timerShowModal = setTimeout(showModal, 15000);
+
 
 window.addEventListener('scroll', showModalByScroll);
+
 
 // закрытие модалки при клике на крестик
 btnCloseModal.addEventListener('click', function() {
